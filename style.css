@@ -1760,3 +1760,50 @@ body {
         height: 56px !important;
     }
 }
+
+/* ===== FINAL POSITION FIX ===== */
+
+/* Token balance ko amount ke neeche aur push karo */
+.token-balance-row {
+    margin-top: 65px !important;
+}
+
+/* Keypad ko balance ke baad thoda neeche rakho */
+.numeric-keypad {
+    margin-top: 30px !important;
+}
+
+/* Review ko keypad ke just neeche rakho */
+.amount-page .review {
+    position: absolute !important;
+
+    left: 20px !important;
+    right: 20px !important;
+    bottom: auto !important;
+
+    top: 76% !important;
+
+    width: calc(100% - 40px) !important;
+    height: 58px !important;
+
+    z-index: 100 !important;
+}
+
+@media (max-width: 480px) {
+
+    .token-balance-row {
+        margin-top: 65px !important;
+    }
+
+    .numeric-keypad {
+        margin-top: 30px !important;
+    }
+
+    .amount-page .review {
+        left: 16px !important;
+        right: 16px !important;
+        top: 76% !important;
+        width: calc(100% - 32px) !important;
+        height: 56px !important;
+    }
+}

@@ -1937,3 +1937,66 @@ body {
   top: auto !important;
   bottom: auto !important;
 }
+
+/* ================================
+   FINAL REVIEW POSITION FIX
+   ================================ */
+
+/* Remove ALL fixed/absolute positioning from Review container */
+.amount-page > div.fixed {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 14px 0 0 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+}
+
+/* Review button itself */
+.amount-page > div.fixed > button {
+    position: static !important;
+
+    width: 100% !important;
+    height: 56px !important;
+
+    margin: 0 !important;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .amount-page > div.fixed {
+        position: static !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        margin-top: 14px !important;
+    }
+
+    .amount-page > div.fixed > button {
+        width: 100% !important;
+        height: 56px !important;
+    }
+}
+
+.review-container {
+    position: static !important;
+    width: 100% !important;
+    margin: 14px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+.review-container button {
+    width: 100% !important;
+    height: 56px !important;
+}

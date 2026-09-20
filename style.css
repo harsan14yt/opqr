@@ -1765,7 +1765,7 @@ body {
 
 /* Token balance ko amount ke neeche aur push karo */
 .token-balance-row {
-    margin-top: 65px !important;
+    margin-top: 100px !important;
 }
 
 /* Keypad ko balance ke baad thoda neeche rakho */
@@ -1792,7 +1792,7 @@ body {
 @media (max-width: 480px) {
 
     .token-balance-row {
-        margin-top: 65px !important;
+        margin-top: 100px !important;
     }
 
     .numeric-keypad {

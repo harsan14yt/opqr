@@ -1833,3 +1833,32 @@ body {
         height: 56px !important;
     }
 }
+
+/* ===== REVIEW BELOW KEYPAD ===== */
+
+.amount-page > .fixed {
+    position: absolute !important;
+
+    left: 16px !important;
+    right: 16px !important;
+
+    top: 69% !important;
+    bottom: auto !important;
+
+    width: auto !important;
+    z-index: 100 !important;
+}
+
+.amount-page > .fixed .w-full {
+    width: 100% !important;
+    height: 56px !important;
+}
+
+@media (max-width: 480px) {
+    .amount-page > .fixed {
+        top: 69% !important;
+        left: 16px !important;
+        right: 16px !important;
+        bottom: auto !important;
+    }
+}

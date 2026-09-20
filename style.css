@@ -1841,3 +1841,7 @@ body {
   width: 100%;
   height: 56px;
 }
+
+html, body {
+  overflow: hidden !important;
+}

@@ -1905,3 +1905,35 @@ body {
         margin-top: 14px !important;
     }
 }
+
+/* REVIEW DIRECTLY BELOW KEYPAD */
+.amount-page > .fixed {
+  position: static !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 14px 0 0 !important;
+  padding: 0 !important;
+}
+
+.amount-page > .fixed .w-full {
+  width: 100% !important;
+  height: 56px !important;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .amount-page > .fixed {
+    position: static !important;
+    margin-top: 14px !important;
+  }
+
+  .amount-page > .fixed .w-full {
+    height: 56px !important;
+  }
+}
+
+.amount-page .review {
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+}

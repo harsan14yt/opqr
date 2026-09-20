@@ -1845,3 +1845,31 @@ body {
 html, body {
   overflow: hidden !important;
 }
+
+#review-container {
+    position: relative !important;
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 15px 0 0 0 !important;
+    padding: 0 !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    transform: none !important;
+}
+
+#review-container button {
+    position: relative !important;
+
+    display: flex !important;
+    width: 100% !important;
+    height: 56px !important;
+
+    margin: 0 !important;
+}

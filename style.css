@@ -1114,9 +1114,6 @@ body {
 
 /* Keep Review button layout untouched */
 
-.amount-page > .fixed {
-  z-index: 10;
-}
 
 
 /* Mobile */
@@ -1299,17 +1296,9 @@ body {
 }
 
 /* Review container */
-.amount-page > .fixed {
-  bottom: 22px;
-}
+
 
 /* Review appearance only */
-.amount-page > .fixed .w-full {
-  height: 62px;
-  border-radius: 30px;
-  font-size: 17px;
-  font-weight: 700;
-}
 
 /* Mobile */
 @media (max-width: 380px) {
@@ -1512,14 +1501,6 @@ body {
 }
 
 /* Keep Review at the bottom without covering the keypad */
-.amount-page > .fixed {
-  bottom: 16px;
-}
-
-.amount-page > .fixed .w-full {
-  height: 62px;
-}
-
 /* Mobile: slightly tighter spacing so the complete keypad fits */
 @media (max-width: 480px) {
   .amount-display {
@@ -1540,9 +1521,7 @@ body {
     height: 48px;
   }
 
-  .amount-page > .fixed {
-    bottom: 12px;
-  }
+  
 }
 
 .token-balance-row {
@@ -1712,18 +1691,7 @@ body {
     border-radius: 18px;
 }
 
-/* Review button - move UP */
-.amount-page .review {
-    position: fixed !important;
-    left: 20px !important;
-    right: 20px !important;
-    bottom: 18px !important;
-
-    width: calc(100% - 40px) !important;
-    height: 58px !important;
-
-    z-index: 100 !important;
-}
+/* Review butto
 
 /* Small mobile screens */
 @media (max-width: 480px) {
@@ -1752,13 +1720,7 @@ body {
         font-size: 24px !important;
     }
 
-    .amount-page .review {
-        left: 16px !important;
-        right: 16px !important;
-        bottom: 12px !important;
-        width: calc(100% - 32px) !important;
-        height: 56px !important;
-    }
+    
 }
 
 /* ===== FINAL POSITION FIX ===== */
@@ -1774,20 +1736,7 @@ body {
 }
 
 /* Review ko keypad ke just neeche rakho */
-.amount-page .review {
-    position: absolute !important;
 
-    left: 20px !important;
-    right: 20px !important;
-    bottom: auto !important;
-
-    top: 76% !important;
-
-    width: calc(100% - 40px) !important;
-    height: 58px !important;
-
-    z-index: 100 !important;
-}
 
 @media (max-width: 480px) {
 
@@ -1799,93 +1748,17 @@ body {
         margin-top: 30px !important;
     }
 
-    .amount-page .review {
-        left: 16px !important;
-        right: 16px !important;
-        top: 76% !important;
-        width: calc(100% - 32px) !important;
-        height: 56px !important;
-    }
+  
 }
 
 /* REVIEW DIRECTLY BELOW KEYPAD */
 
-.amount-page .review {
-    position: absolute !important;
-    top: 70% !important;
-    bottom: auto !important;
 
-    left: 20px !important;
-    right: 20px !important;
-    width: calc(100% - 40px) !important;
 
-    height: 58px !important;
-    z-index: 100 !important;
-}
 
-@media (max-width: 480px) {
-    .amount-page .review {
-        top: 70% !important;
-        bottom: auto !important;
-        left: 16px !important;
-        right: 16px !important;
-        width: calc(100% - 32px) !important;
-        height: 56px !important;
-    }
-}
-
-/* ===== REVIEW BELOW KEYPAD ===== */
-
-.amount-page > .fixed {
-    position: absolute !important;
-
-    left: 16px !important;
-    right: 16px !important;
-
-    top: 69% !important;
-    bottom: auto !important;
-
-    width: auto !important;
-    z-index: 100 !important;
-}
-
-.amount-page > .fixed .w-full {
-    width: 100% !important;
-    height: 56px !important;
-}
-
-@media (max-width: 480px) {
-    .amount-page > .fixed {
-        top: 69% !important;
-        left: 16px !important;
-        right: 16px !important;
-        bottom: auto !important;
-    }
-}
 
 /* ===== REVIEW: DIRECTLY AFTER KEYPAD ===== */
 
-.amount-page > .fixed {
-    position: absolute !important;
-    top: auto !important;
-    bottom: auto !important;
-    left: 16px !important;
-    right: 16px !important;
-    width: auto !important;
-    margin: 0 !important;
-    transform: none !important;
-}
-
-/* Actual Review button */
-.amount-page > .fixed .review,
-.amount-page .review {
-    position: static !important;
-    top: auto !important;
-    bottom: auto !important;
-    width: 100% !important;
-    height: 56px !important;
-    margin: 0 !important;
-}
 
 /* Put the Review container below the keypad */
 .numeric-keypad + .fixed {
@@ -1894,49 +1767,7 @@ body {
     margin-top: 14px !important;
 }
 
-@media (max-width: 480px) {
 
-    .amount-page > .fixed {
-        left: 16px !important;
-        right: 16px !important;
-    }
-
-    .numeric-keypad + .fixed {
-        margin-top: 14px !important;
-    }
-}
-
-/* REVIEW DIRECTLY BELOW KEYPAD */
-.amount-page > .fixed {
-  position: static !important;
-  width: 100% !important;
-  max-width: none !important;
-  margin: 14px 0 0 !important;
-  padding: 0 !important;
-}
-
-.amount-page > .fixed .w-full {
-  width: 100% !important;
-  height: 56px !important;
-}
-
-/* MOBILE */
-@media (max-width: 480px) {
-  .amount-page > .fixed {
-    position: static !important;
-    margin-top: 14px !important;
-  }
-
-  .amount-page > .fixed .w-full {
-    height: 56px !important;
-  }
-}
-
-.amount-page .review {
-  position: static !important;
-  top: auto !important;
-  bottom: auto !important;
-}
 
 /* ================================
    FINAL REVIEW POSITION FIX
@@ -1999,4 +1830,14 @@ body {
 .review-container button {
     width: 100% !important;
     height: 56px !important;
+}
+
+.review-container {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.review-container button {
+  width: 100%;
+  height: 56px;
 }
